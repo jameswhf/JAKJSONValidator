@@ -7,8 +7,8 @@
 //
 
 #import "NSDictionary+JAKJSONValidator.h"
-#import <RPJSONValidator.h>
-#import <RPValidatorPredicate.h>
+#import <RPJSONValidator/RPJSONValidator.h>
+#import <RPJSONValidator/RPValidatorPredicate.h>
 
 @implementation NSDictionary (JAKJSONValidator)
 
