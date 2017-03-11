@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   s.author             = { "王贺锋" => "jameswhf@qq.com" }
   #  When using multiple platforms
   s.ios.deployment_target = "7.0"
-  s.source       = { :git => "git@github.com:jameswhf/JAKJSONValidator.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/jameswhf/JAKJSONValidator.", :tag => s.version.to_s }
   s.source_files  = "Classes", "Classes/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
   s.dependency "RPJSONValidator", "0.2.0"

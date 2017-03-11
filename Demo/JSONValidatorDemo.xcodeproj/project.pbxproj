@@ -13,9 +13,13 @@
 		DF1520681E73A6EA0044F1C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1520661E73A6EA0044F1C5 /* Main.storyboard */; };
 		DF15206A1E73A6EA0044F1C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF1520691E73A6EA0044F1C5 /* Assets.xcassets */; };
 		DF15206D1E73A6EA0044F1C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF15206B1E73A6EA0044F1C5 /* LaunchScreen.storyboard */; };
+		F625B35CC1769AAA2116F5C3 /* libPods-JSONValidatorDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 815F4E139543512CDCCE6A15 /* libPods-JSONValidatorDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F2F9F6F06E4D8E76220A0EB /* Pods-JSONValidatorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONValidatorDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSONValidatorDemo/Pods-JSONValidatorDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		815F4E139543512CDCCE6A15 /* libPods-JSONValidatorDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JSONValidatorDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8BF6534A81E23285AB0A109 /* Pods-JSONValidatorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONValidatorDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSONValidatorDemo/Pods-JSONValidatorDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DF15205A1E73A6EA0044F1C5 /* JSONValidatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONValidatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF15205E1E73A6EA0044F1C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF1520601E73A6EA0044F1C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F625B35CC1769AAA2116F5C3 /* libPods-JSONValidatorDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AF421F0B4639A0D8D00A17A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				815F4E139543512CDCCE6A15 /* libPods-JSONValidatorDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C6B42B21456553B1609394C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F2F9F6F06E4D8E76220A0EB /* Pods-JSONValidatorDemo.debug.xcconfig */,
+				C8BF6534A81E23285AB0A109 /* Pods-JSONValidatorDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DF1520511E73A6EA0044F1C5 = {
 			isa = PBXGroup;
 			children = (
 				DF15205C1E73A6EA0044F1C5 /* JSONValidatorDemo */,
 				DF15205B1E73A6EA0044F1C5 /* Products */,
+				6C6B42B21456553B1609394C /* Pods */,
+				6AF421F0B4639A0D8D00A17A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF1520711E73A6EA0044F1C5 /* Build configuration list for PBXNativeTarget "JSONValidatorDemo" */;
 			buildPhases = (
+				61EB35EE631AF1C6BC8458CF /* [CP] Check Pods Manifest.lock */,
 				DF1520561E73A6EA0044F1C5 /* Sources */,
 				DF1520571E73A6EA0044F1C5 /* Frameworks */,
 				DF1520581E73A6EA0044F1C5 /* Resources */,
+				020AB83AC2F36F2AC2CBA702 /* [CP] Embed Pods Frameworks */,
+				3B4A37ED5D4D2AE3B8ED59A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +172,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		020AB83AC2F36F2AC2CBA702 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSONValidatorDemo/Pods-JSONValidatorDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B4A37ED5D4D2AE3B8ED59A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSONValidatorDemo/Pods-JSONValidatorDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61EB35EE631AF1C6BC8458CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DF1520561E73A6EA0044F1C5 /* Sources */ = {
@@ -269,6 +344,7 @@
 		};
 		DF1520721E73A6EA0044F1C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F2F9F6F06E4D8E76220A0EB /* Pods-JSONValidatorDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P8E499MLAY;
@@ -281,6 +357,7 @@
 		};
 		DF1520731E73A6EA0044F1C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8BF6534A81E23285AB0A109 /* Pods-JSONValidatorDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P8E499MLAY;

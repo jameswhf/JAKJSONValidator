@@ -1,0 +1,19 @@
+PODS:
+  - JAKJSONValidator (0.0.1):
+    - RPJSONValidator (= 0.2.0)
+  - RPJSONValidator (0.2.0)
+
+DEPENDENCIES:
+  - JAKJSONValidator (from `./../JAKJSONValidator.podspec`)
+
+EXTERNAL SOURCES:
+  JAKJSONValidator:
+    :path: "./../JAKJSONValidator.podspec"
+
+SPEC CHECKSUMS:
+  JAKJSONValidator: c28dbabac3b16adcf73ebb01094da0a8a6a3aaf7
+  RPJSONValidator: a079b234c0f87833b657708adb80531dc45dbe83
+
+PODFILE CHECKSUM: dd279a69e494938d7958f538a27431308f626f37
+
+COCOAPODS: 1.1.1
